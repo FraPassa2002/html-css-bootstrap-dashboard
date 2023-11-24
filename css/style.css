@@ -1,0 +1,33 @@
+/* 
+    GENERAL
+*/
+
+
+/* 
+    HEADER
+*/
+
+.debug header .row {
+    height: 9vh;
+}
+
+/* 
+    MAIN
+*/
+
+
+/* 
+    FOOTER
+*/
+
+/* 
+    DEBUG
+*/
+.debug header .row {
+   background-color: darkgreen;
+   border: 2px dashed royalblue;
+}
+.debug header .header_box {
+    border: 2px dashed gold;
+    padding: 20px;
+}
