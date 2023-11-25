@@ -2,18 +2,65 @@
     GENERAL
 */
 
+body {
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+    max-height: calc(100vh - 60px);
+}
+
+
+
+
+
+
 
 /* 
     HEADER
 */
-
-.debug header .row {
-    height: 9vh;
+header {
+    height: 60px;
+    /* overflow: hidden; */
 }
+
+
+/* 
+    ASIDE
+*/
+
+aside {
+    width: 180px;
+}
+
+.list-group-item {
+    border-color: var(--bs-list-group-active-bg);
+    border:none;
+    color: white;
+    background-color: transparent;
+    --bs-list-group-action-color: rgba(33, 37, 41, 0.30);
+    --bs-list-group-action-hover-color: white;
+    --bs-list-group-action-hover-bg: rgba(33, 37, 41, 0.30);
+    --bs-list-group-action-active-color: white;
+    --bs-list-group-action-active-bg: rgba(33, 37, 41, 030);
+    --bs-list-group-disabled-color:rgba(33, 37, 41, 0.30);
+
+}
+
+
+
+
+
 
 /* 
     MAIN
 */
+main {
+    width: 100%;
+}
 
 
 /* 
@@ -27,7 +74,27 @@
    background-color: darkgreen;
    border: 2px dashed royalblue;
 }
+
+
 .debug header .header_box {
     border: 2px dashed gold;
-    padding: 20px;
+    /* padding: 5px; */
 }
+
+.debug aside {
+/* padding: 100px; */
+background-color:coral;
+border: 2px solid darkblue;
+}
+
+.debug main {
+/* padding: 100px; */
+background-color: rebeccapurple;
+border: 2px solid darkred;
+}
+
+.debug section {
+    background-color: pink;
+}
+
+
