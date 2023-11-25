@@ -6,6 +6,10 @@ body {
     margin: 0 auto;
 }
 
+:root {
+    --aside-bg-color: #051E34;
+}
+
 #wrapper {
     display: flex;
     flex-wrap: nowrap;
@@ -23,7 +27,7 @@ body {
     HEADER
 */
 body > header {
-    height: 60px;
+    height: 69px;
     position: sticky;
     z-index: 2;
 }
@@ -39,8 +43,9 @@ body > header {
 aside {
     width: 180px;
     position: fixed;
-    height: 92%;
+    height: calc(100% - 60px);
     z-index: 1;
+    background-color:  var( --aside-bg-color);
 }
 
 .list-group-item {
@@ -98,6 +103,10 @@ main > main > .row {
     margin: 0 auto;
 }
 
+main > main .main_box:first-of-type {
+    overflow-x: hidden;
+}
+
 /* 
     FOOTER
 */
@@ -105,46 +114,45 @@ main > main > .row {
 /* 
     DEBUG
 */
-.debug > header .row {
+/* .debug > header .row {
    background-color: darkgreen;
    border: 2px dashed royalblue;
-}
+} */
 
 
-.debug > header .header_box {
+/* .debug > header .header_box {
     border: 2px dashed gold;
-    /* padding: 5px; */
-}
+    
+} */
 
-.debug aside {
-/* padding: 100px; */
+/* .debug aside {
 background-color:coral;
 border: 2px solid darkblue;
-}
+} */
 
-.debug main {
-/* padding: 100px; */
+/* .debug main {
+
 background-color: rebeccapurple;
 border: 2px solid darkred;
-}
+} */
 
-.debug section {
+/* .debug section {
     background-color: pink;
-}
+} */
 
-.debug .main_header_box {
-    /* background-color: cornflowerblue; */
+/* .debug .main_header_box {
+    background-color: cornflowerblue;
     border: 2px solid rosybrown;
-}
+} */
 
-.debug .main_box {
-    /* background-color: cornflowerblue; */
+/* .debug .main_box {
+    background-color: cornflowerblue;
     border: 2px solid darkred;
-}
+} */
 
-.debug .main_inner_box {
+/* .debug .main_inner_box {
     background-color: rebeccapurple;
     border: lightcoral;
-}
+} */
 
 
