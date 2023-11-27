@@ -8,13 +8,12 @@ body {
 
 :root {
     --aside-bg-color: #051E34;
+    --main-header-height: 69px;
 }
 
 #wrapper {
-    display: flex;
     flex-wrap: nowrap;
-    height: 100%;
-    max-height: calc(100vh - 60px);
+    max-height: calc(100vh - var(--main-header-height));
 }
 
 
@@ -27,9 +26,17 @@ body {
     HEADER
 */
 body > header {
-    height: 69px;
+    height: var(--main-header-height);
     position: sticky;
     z-index: 2;
+}
+
+.logo-header {
+    width: 100px;
+}
+
+.logo-header > * > *{
+    width: 50%;
 }
 
 
@@ -41,9 +48,11 @@ body > header {
 */
 
 aside {
-    width: 180px;
-    position: fixed;
-    height: calc(100% - 60px);
+    /* width: 180px; */
+    position: sticky;
+    top: var(--main-header-height);
+    left: 0;
+    height: calc(100vh - var(--main-header-height));
     z-index: 1;
     background-color:  var( --aside-bg-color);
 }
@@ -67,29 +76,23 @@ aside {
 /* 
     MAIN
 */
-main {
-    width: 100%;
-    height: 100%;
-}
 
 
 
 /* header */
 
-main > header  {
-    height: 110px;
-    margin-left: 180px;
-}
+
 
 main > header > .row {
     margin: 0 auto;
 }
 
+
+
 /* main */
 main > main {
-    height: 80%;
-    width: calc(100% - 180px);
-    margin-left: 180px;
+    height: 100%;
+    overflow: hidden;
     
 }
 main > main > * {
@@ -103,8 +106,8 @@ main > main > .row {
     margin: 0 auto;
 }
 
-main > main .main_box:first-of-type {
-    overflow-x: hidden;
+.title > span {
+    vertical-align: text-top;
 }
 
 /* 

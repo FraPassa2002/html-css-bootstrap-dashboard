@@ -21,739 +21,798 @@
         
         <!-- Inizio Header Principale -->
         <header class=" ">
-            
-            <div class="row p-2 m-0 fixed-top bg-light">
 
-                <div class="col-auto">
-                    <div class="header_box py-2 mt-1 ">
-                        <a href="#">
-                            <img src="./img/logo.svg" class="w-100 " alt="Boolean">
-                        </a>
-                    </div>
-                </div>
+            <div class="contaier-fluid">
 
-                <div class="col">
-                    <div class="header_box py-2">
-                        
-                        <nav class="navbar bg-body-tertiary p-0">
-                            <form class="container-fluid p-0">
-                              <div class="input-group">
-                                <span class="input-group-text" id="basic-addon1">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </span>
-                                <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
-                              </div>
-                            </form>
-                          </nav>
-                        
-                    </div>
-                </div>
+                <div class="row p-2 m-0 fixed-top bg-white">
 
-                <div class="col-auto">
-                    <div class="header_box d-flex py-1">
-                        <div class="p-1">
-                            <button type="button" class="btn btn-light">
-                                <i class="fa-solid fa-list-ul"></i>
-                            </button>
-                        </div>
-                        <div class="p-1">
-                            <button type="button" class="btn btn-light">
-                                <i class="fa-solid fa-circle-question"></i>
-                            </button>
-                        </div>
-                        <div class="p-1">
-                            <button type="button" class="btn btn-light">
-                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </button>
-                        </div>
-                        <div class="p-1">
-                            <button type="button" class="btn btn-light text-warning">
-                                <i class="fa-solid fa-bell"></i>
-                            </button>
+                    <!-- lato sinistro -->
+                    <div class="col-auto">
+                        <div class="logo-header header_box mt-lg-3">
+                            <a href="#" class="">
+                                <img src="./img/logo.svg" class="w-100 d-none d-lg-block" alt="Boolean">
+                                <img src="./img/mobile-logo.png" class="d-lg-none " alt="B">
+                            </a>
                         </div>
                     </div>
+
+                    <!-- centro -->
+                    <div class="col">
+                        <div class="header_box py-2">
+                            
+                            <nav class="navbar bg-body-tertiary p-0">
+                                <form class="container-fluid p-0">
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                </form>
+                            </nav>
+                            
+                        </div>
+                    </div>
+
+                    <!-- lato destro -->
+                    <div class="col-auto">
+                        <div class="header_box d-flex py-1">
+                            <div class="p-1 d-none d-lg-block">
+                                <button type="button" class="btn btn-light">
+                                    <i class="fa-solid fa-list-ul"></i>
+                                </button>
+                            </div>
+                            <div class="p-1 d-none d-lg-block">
+                                <button type="button" class="btn btn-light">
+                                    <i class="fa-solid fa-circle-question"></i>
+                                </button>
+                            </div>
+                            <div class="p-1 d-none d-lg-block">
+                                <button type="button" class="btn btn-light">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                            </div>
+                            <div class="p-1">
+                                <button type="button" class="btn btn-light text-warning" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                    <i class="fa-solid fa-bell"></i>
+                                </button>
+                                <div class="offcanvas offcanvas-end w-50 d-block" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <form class="row g-3 needs-validation" novalidate>
+                                            <div class="col-md-4 position-relative">
+                                              <label for="validationTooltip01" class="form-label">Nome</label>
+                                              <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+                                              <div class="valid-tooltip">
+                                                Looks good!
+                                              </div>
+                                            </div>
+                                            <div class="col-md-4 position-relative">
+                                              <label for="validationTooltip02" class="form-label">Cognome</label>
+                                              <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
+                                              <div class="valid-tooltip">
+                                                Looks good!
+                                              </div>
+                                            </div>
+                                            <div class="col-md-4 position-relative">
+                                              <label for="validationTooltipUsername" class="form-label">Email</label>
+                                              <div class="input-group has-validation">
+                                                <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                                                <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                                                <div class="invalid-tooltip">
+                                                  Please choose a unique and valid username.
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputPassword4" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="inputPassword4">
+                                              </div>
+                                            <div class="col-md-6 position-relative">
+                                              <label for="validationTooltip03" class="form-label">City</label>
+                                              <input type="text" class="form-control" id="validationTooltip03" required>
+                                              <div class="invalid-tooltip">
+                                                Please provide a valid city.
+                                              </div>
+                                            </div>
+                                            <div class="col-md-3 position-relative">
+                                              <label for="validationTooltip04" class="form-label">State</label>
+                                              <select class="form-select" id="validationTooltip04" required>
+                                                <option selected disabled value="">Choose...</option>
+                                                <option>...</option>
+                                              </select>
+                                              <div class="invalid-tooltip">
+                                                Please select a valid state.
+                                              </div>
+                                            </div>
+                                            <div class="col-md-3 position-relative">
+                                              <label for="validationTooltip05" class="form-label">Zip</label>
+                                              <input type="text" class="form-control" id="validationTooltip05" required>
+                                              <div class="invalid-tooltip">
+                                                Please provide a valid zip.
+                                              </div>
+                                            </div>
+                                            <div class="col-12">
+                                              <button class="btn btn-primary" type="submit">Submit form</button>
+                                            </div>
+                                        </form>   
+                                    </div>
+                                </div>                                
+                            </div>
+ 
+                        </div>
+                    </div>
+
                 </div>
+                <!-- Fine Row -->
 
             </div>
-            <!-- Fine Row -->
 
         </header>
         <!-- Fine Header Principale -->
         
         <!-- Inizio wrapper -->
-        <section id="wrapper" class="d-flex"> 
+        <section id="wrapper" class="d-flex h-100"> 
 
-            <!-- Inizio Section -->
-            <aside class="d-flex flex-column  border-0 ">
+            <div class="container-fluid h-100 p-0 d-flex">
 
-                <div class="aside-top mb-auto p-2 mt-2">
-                    
-                    <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action rounded-1" aria-current="true">
-                            <i class="fa-solid fa-house"></i>
-                            <span class=" ms-3">Home</span>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action rounded-1">
-                            <i class="fa-solid fa-chart-simple"></i>
-                            <span class=" ms-3">Stats</span>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action rounded-1">
-                            <i class="fa-solid fa-signal"></i>
-                            <span class=" ms-3">Signals</span>
-                        </a>
+                <!-- Inizio Section -->
+                <aside class="d-flex flex-column  border-0 justify-content-between">
+
+                    <nav class="aside-top p-2 mt-2">
                         
-                      </div>
-
-                </div>
-
-                <div class="aside-bottom p-2  mb-3">
-
-                    <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                            <i class="fa-solid fa-gear"></i>
-                            <span class=" ms-3">Admin</span>
-                        </a>
-                      </div>
-                </div>
-    
-
-            </aside>
-            <!-- Fine Section -->
-
-            <!-- Inizio main -->
-            <main class="border-o">
-
-                <header class="border-0 text-light">
-
-                    <div class="row bg-primary">
-
-                        <div class="col-12">
-                            <div class="main_header_box p-1">
-
-                                <div class="row">
-
-                                    <div class="col-5">
-                                        <div class="main_header_box p-1 ">
-
-                                            <h1>
-                                                Boolean
-                                            </h1>
-
-                                            <span class="badge rounded-pill text-bg-secondary bg-opacity-75">Secondary</span>
-
-                                            <i class="fa-solid fa-angles-right"></i>
-
-                                            <span class="badge rounded-pill text-bg-secondary bg-opacity-75">Secondary</span>
-
-                                            <span class="badge rounded-pill text-bg-secondary bg-opacity-75">Secondary</span>
-
-                                            <span class="badge rounded-pill text-bg-secondary bg-opacity-75">Secondary</span>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="col-4">
-                                        <div class="main_header_box p-1">
-
-                                            <p>
-                                                Studenti online negli ultimi 30 minuti
-                                            </p>
-
-                                            <h2>
-                                                125
-                                            </h2>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="col-3">
-                                        <div class="main_header_box p-1">
-
-                                            <span>
-                                                Nuovo studente
-                                            </span>
-
-                                            <button type="button" class="btn btn-outline-light ms-3">
-                                                <i class="fa-solid fa-plus"></i>
-                                            </button>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!-- Fine row -->
-
-                            </div>
+                        <div class="list-group px-3">
+                            <a href="#" class="list-group-item list-group-item-action rounded-1 px-0 d-flex" aria-current="true">
+                                <i class="fa-solid fa-house"></i>
+                                <span class=" ms-3 d-none d-lg-inline-block ">Home</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action rounded-1 py-3 px-0 d-flex">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <span class=" ms-3 d-none d-lg-inline-block">Stats</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action rounded-1 px-0 d-flex">
+                                <i class="fa-solid fa-signal"></i>
+                                <span class=" ms-3 d-none d-lg-inline-block">Signals</span>
+                            </a>
+                            
                         </div>
 
-                    </div>
-                    <!-- Fine row -->
+                    </nav>
 
-                </header>
+                    <nav class="aside-bottom p-2  mb-3">
 
-                <main class="border-0">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                                <i class="fa-solid fa-gear"></i>
+                                <span class=" ms-3 d-none d-lg-inline-block">Admin</span>
+                            </a>
+                        </div>
+                    </nav>
+        
 
-                    <div class="row bg-light">
+                </aside>
+                <!-- Fine Section -->
 
-                        <div class="col p-1">
-                            <div class="main_box p-1">
+                <!-- Inizio main -->
+                <main class="border-o h-100 w-100">
 
-                                <div class="row">
+                    <header class="border-0 text-light">
 
-                                    <!-- inizio MAIN-LEFT -->
-                                    <div class="col-8">
-                                        <div class="main_box">
+                        <div class="row bg-primary">
 
-                                            <div class="row">
+                            <div class="col-12">
+                                <div class="main_header_box p-1">
 
-                                                <div class="col m-2">
-                                                    <div class="main_inner_box border border border-dark-subtle rounded">
+                                    <div class="row">
 
-                                                        <div class="row">
+                                        <!-- col-destra -->
+                                        <div class="col-12 col-md order-md-1 py-3 py-md-1">
+                                            <div class="main_header_box p-1">
 
-                                                            <div class="col">
-                                                                <div class="main_inner_box p-2 bg-body-secondary border border-dark-subtle rounded-top">
-                                                                   <h3>
-                                                                    Prossime classi
-                                                                   </h3>
-                                                                </div>
-                                                            </div>
+                                                <span>
+                                                    Nuovo studente
+                                                </span>
 
-                                                        </div>
-                                                        <!-- Fine Row -->
-
-                                                        <div class="row">
-
-                                                            <div class="col">
-                                                                <div class="main_inner_box bg-light rounded-bottom p-1">
-                                                                    
-                                                                    <table class="table align-middle mb-0 bg-white ">
-                                                                        <thead class="bg-light">
-                                                                            <tr>
-                                                                                <th>Nome</th>
-                                                                                <th>Data inizio</th>
-                                                                                <th>ROI</th>
-                                                                                <th>Stato</th>
-                                                                                <th>Azioni</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <div class="d-flex align-items-center">
-                                                                                        <img
-                                                                                            src="./img/class-avatar.jpg"
-                                                                                            alt=""
-                                                                                            style="width: 45px; height: 45px"
-                                                                                            class="rounded-circle"
-                                                                                        />
-                                                                                        <div class="ms-3">
-                                                                                            <p class="fw-bold mb-1">Classe 75</p>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <p class="fw-normal mb-1">15 feb 2021</p>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <span>20%</span>
-                                                                                </td>
-                                                                                <td><span class="badge text-bg-success">Done</span></td>
-                                                                                <td>
-                                                                                    <button type="button" class="btn btn-outline-secondary">
-                                                                                        <i class="fa-solid fa-pencil"></i>
-                                                                                    </button>
-                                                                                    <button type="button" class="btn btn-outline-secondary">
-                                                                                        <i class="fa-solid fa-trash-can"></i>
-                                                                                    </button>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <div class="d-flex align-items-center">
-                                                                                        <img
-                                                                                            src="./img/class-avatar.jpg"
-                                                                                            alt=""
-                                                                                            style="width: 45px; height: 45px"
-                                                                                            class="rounded-circle"
-                                                                                        />
-                                                                                        <div class="ms-3">
-                                                                                            <p class="fw-bold mb-1">Classe 75</p>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <p class="fw-normal mb-1">15 feb 2021</p>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <span>20%</span>
-                                                                                </td>
-                                                                                <td><span class="badge text-bg-success">Done</span></td>
-                                                                                <td>
-                                                                                    <button type="button" class="btn btn-outline-secondary">
-                                                                                        <i class="fa-solid fa-pencil"></i>
-                                                                                    </button>
-                                                                                    <button type="button" class="btn btn-outline-secondary">
-                                                                                        <i class="fa-solid fa-trash-can"></i>
-                                                                                    </button>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <div class="d-flex align-items-center">
-                                                                                        <img
-                                                                                            src="./img/class-avatar.jpg"
-                                                                                            alt=""
-                                                                                            style="width: 45px; height: 45px"
-                                                                                            class="rounded-circle"
-                                                                                        />
-                                                                                        <div class="ms-3">
-                                                                                            <p class="fw-bold mb-1">Classe 75</p>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <p class="fw-normal mb-1">15 feb 2021</p>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <span>20%</span>
-                                                                                </td>
-                                                                                <td><span class="badge bg-warning">Process</span></td>
-                                                                                <td>
-                                                                                    <button type="button" class="btn btn-outline-secondary">
-                                                                                        <i class="fa-solid fa-pencil"></i>
-                                                                                    </button>
-                                                                                    <button type="button" class="btn btn-outline-secondary">
-                                                                                        <i class="fa-solid fa-trash-can"></i>
-                                                                                    </button>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <div class="d-flex align-items-center">
-                                                                                        <img
-                                                                                            src="./img/class-avatar.jpg"
-                                                                                            alt=""
-                                                                                            style="width: 45px; height: 45px"
-                                                                                            class="rounded-circle"
-                                                                                        />
-                                                                                        <div class="ms-3">
-                                                                                            <p class="fw-bold mb-1">Classe 75</p>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <p class="fw-normal mb-1">15 feb 2021</p>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <span>20%</span>
-                                                                                </td>
-                                                                                <td><span class="badge text-bg-success">Done</span></td>
-                                                                                <td>
-                                                                                    <button type="button" class="btn btn-outline-secondary">
-                                                                                        <i class="fa-solid fa-pencil"></i>
-                                                                                    </button>
-                                                                                    <button type="button" class="btn btn-outline-secondary">
-                                                                                        <i class="fa-solid fa-trash-can"></i>
-                                                                                    </button>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <div class="d-flex align-items-center">
-                                                                                        <img
-                                                                                            src="./img/class-avatar.jpg"
-                                                                                            alt=""
-                                                                                            style="width: 45px; height: 45px"
-                                                                                            class="rounded-circle"
-                                                                                        />
-                                                                                        <div class="ms-3">
-                                                                                            <p class="fw-bold mb-1">Classe 75</p>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <p class="fw-normal mb-1">15 feb 2021</p>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <span>20%</span>
-                                                                                </td>
-                                                                                <td><span class="badge text-bg-danger">failed</span></td>
-                                                                                <td>
-                                                                                    <button type="button" class="btn btn-outline-secondary">
-                                                                                        <i class="fa-solid fa-pencil"></i>
-                                                                                    </button>
-                                                                                    <button type="button" class="btn btn-outline-secondary">
-                                                                                        <i class="fa-solid fa-trash-can"></i>
-                                                                                    </button>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <div class="d-flex align-items-center">
-                                                                                        <img
-                                                                                            src="./img/class-avatar.jpg"
-                                                                                            alt=""
-                                                                                            style="width: 45px; height: 45px"
-                                                                                            class="rounded-circle"
-                                                                                        />
-                                                                                        <div class="ms-3">
-                                                                                            <p class="fw-bold mb-1">Classe 75</p>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <p class="fw-normal mb-1">15 feb 2021</p>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <span>20%</span>
-                                                                                </td>
-                                                                                <td><span class="badge text-bg-success">Done</span></td>
-                                                                                <td>
-                                                                                    <button type="button" class="btn btn-outline-secondary">
-                                                                                        <i class="fa-solid fa-pencil"></i>
-                                                                                    </button>
-                                                                                    <button type="button" class="btn btn-outline-secondary">
-                                                                                        <i class="fa-solid fa-trash-can"></i>
-                                                                                    </button>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <div class="d-flex align-items-center">
-                                                                                        <img
-                                                                                            src="./img/class-avatar.jpg"
-                                                                                            alt=""
-                                                                                            style="width: 45px; height: 45px"
-                                                                                            class="rounded-circle"
-                                                                                        />
-                                                                                        <div class="ms-3">
-                                                                                            <p class="fw-bold mb-1">Classe 75</p>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <p class="fw-normal mb-1">15 feb 2021</p>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <span>20%</span>
-                                                                                </td>
-                                                                                <td><span class="badge text-bg-danger">failed</span></td>
-                                                                                <td>
-                                                                                    <button type="button" class="btn btn-outline-secondary">
-                                                                                        <i class="fa-solid fa-pencil"></i>
-                                                                                    </button>
-                                                                                    <button type="button" class="btn btn-outline-secondary">
-                                                                                        <i class="fa-solid fa-trash-can"></i>
-                                                                                    </button>
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>
-                                                                                    <div class="d-flex align-items-center">
-                                                                                        <img
-                                                                                            src="./img/class-avatar.jpg"
-                                                                                            alt=""
-                                                                                            style="width: 45px; height: 45px"
-                                                                                            class="rounded-circle"
-                                                                                        />
-                                                                                        <div class="ms-3">
-                                                                                            <p class="fw-bold mb-1">Classe 75</p>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <p class="fw-normal mb-1">15 feb 2021</p>
-                                                                                </td>
-                                                                                <td>
-                                                                                    <span>20%</span>
-                                                                                </td>
-                                                                                <td><span class="badge text-bg-success">Done</span></td>
-                                                                                <td>
-                                                                                    <button type="button" class="btn btn-outline-secondary">
-                                                                                        <i class="fa-solid fa-pencil"></i>
-                                                                                    </button>
-                                                                                    <button type="button" class="btn btn-outline-secondary">
-                                                                                        <i class="fa-solid fa-trash-can"></i>
-                                                                                    </button>
-                                                                                </td>
-                                                                            </tr>
-                                                                            
-                                                                        </tbody>
-                                                                    </table>
-                                                                    
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                        <!-- Fine Row -->
-
-                                                    </div>
-                                                </div>
+                                                <button type="button" class="btn btn-outline-light ms-3">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </button>
 
                                             </div>
-                                            <!-- Fine Row -->
-
-                                            <div class="row">
-
-                                                <div class="col m-2">
-                                                    <div class="main_inner_box border border-dark-subtle rounded">
-
-                                                        <div class="row">
-
-                                                            <div class="col">
-                                                                <div class="main_inner_box p-2 bg-body-secondary border border-dark-subtle rounded-top">
-                                                                    <h3>
-                                                                        F.A.Q.
-                                                                    </h3>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                        <!-- Fine Row -->
-
-                                                        <div class="row">
-
-                                                            <div class="col">
-                                                                <div class="main_inner_box bg-light p-1 rounded-bottom">
-                                                                    
-                                                                    <div class="accordion w-100" id="basicAccordion">
-                                                                        <div class="accordion-item">
-                                                                            <h2 class="accordion-header" id="headingOne">
-                                                                                <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
-                                                                                    data-mdb-target="#basicAccordionCollapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                                                                    Come aggiungere un nuovo studente?
-                                                                                </button>
-                                                                            </h2>
-                                                                          <div id="basicAccordionCollapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                                                                data-mdb-parent="#basicAccordion" >
-                                                                                <div class="accordion-body">
-                                                                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
-                                                                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                                                                    element. These classes control the overall appearance, as well as the showing and
-                                                                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                                                                    our default variables. It's also worth noting that just about any HTML can go within
-                                                                                    the <code>.accordion-body</code>, though the transition does limit overflow.
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="accordion-item">
-                                                                            <h2 class="accordion-header" id="headingTwo">
-                                                                                    <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
-                                                                                    data-mdb-target="#basicAccordionCollapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                                                    Come posso accedere alle informazioni del mio account?
-                                                                                </button>
-                                                                            </h2>
-                                                                            <div id="basicAccordionCollapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                                                                data-mdb-parent="#basicAccordion">
-                                                                                <div class="accordion-body">
-                                                                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                                                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                                                                    element. These classes control the overall appearance, as well as the showing and
-                                                                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                                                                    our default variables. It's also worth noting that just about any HTML can go within
-                                                                                    the <code>.accordion-body</code>, though the transition does limit overflow.
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="accordion-item">
-                                                                            <h2 class="accordion-header" id="headingThree">
-                                                                                <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
-                                                                                    data-mdb-target="#basicAccordionCollapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                                                    Posso usare dashboard da mobile?
-                                                                                </button>
-                                                                            </h2>
-                                                                            <div id="basicAccordionCollapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                                                                data-mdb-parent="#basicAccordion">
-                                                                                <div class="accordion-body">
-                                                                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                                                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                                                                    element. These classes control the overall appearance, as well as the showing and
-                                                                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                                                                    our default variables. It's also worth noting that just about any HTML can go within
-                                                                                    the <code>.accordion-body</code>, though the transition does limit overflow.
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                        <!-- Fine Row -->
-                                                        
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <!-- Fine Row -->
-
                                         </div>
+
+
+                                        <!-- col sinistra -->
+                                        <div class="col-12 col-md-5 ">
+                                            <div class="main_header_box p-1 ">
+
+                                                <div class="title">
+
+                                                    <h1 class="d-inline">
+                                                        Boolean
+                                                    </h1>
+
+                                                    <span class="badge rounded-pill text-bg-secondary bg-opacity-75">Secondary</span>
+
+
+                                                </div>
+
+                                                <span class="badge rounded-pill text-bg-secondary bg-opacity-75">Secondary</span>
+
+                                                <i class="fa-solid fa-angles-right"></i>
+
+                                                <span class="badge rounded-pill text-bg-secondary bg-opacity-75 d-none d-lg-inline-block">Secondary</span>
+
+                                                <span class="badge rounded-pill text-bg-secondary bg-opacity-75 d-none d-lg-inline-block">Secondary</span>
+
+                                                <span class="badge rounded-pill text-bg-secondary bg-opacity-75 d-none d-lg-inline-block">Secondary</span>
+                                                <span class="badge rounded-pill text-bg-secondary bg-opacity-75 d-lg-none">+</span>
+
+                                            </div>
+                                        </div>
+
+                                        <!-- col centro -->
+                                        <div class="col-12 col-md">
+                                            <div class="main_header_box p-1">
+
+                                                <p>
+                                                    Studenti online negli ultimi 30 minuti
+                                                </p>
+
+                                                <h2>
+                                                    125
+                                                </h2>
+
+                                            </div>
+                                        </div>
+                                        
+                                        
                                     </div>
-                                    <!-- fine MAIN-LEFT -->
+                                    <!-- Fine row -->
 
-                                    <!-- inizio MAIN-RIGHT -->
-                                    <div class="col-4">
-                                        <div class="main_box">
+                                </div>
+                            </div>
 
-                                            <div class="row">
+                        </div>
+                        <!-- Fine row -->
 
-                                                <div class="col m-2">
-                                                    <div class="main_inner_box border border-dark-subtle rounded">
+                    </header>
 
-                                                        <div class="row">
+                    <main class="border-0">
 
-                                                            <div class="col">
-                                                                <div class="main_inner_box p-2 bg-body-secondary border border-dark-subtle rounded-top">
+                        <div class="row">
+
+                            <!-- inizio MAIN-LEFT -->
+                            <div class="col-12 col-lg-8">
+                                            <div class="main_box">
+
+                                                <div class="row">
+
+                                                    <div class="col m-2">
+                                                        <div class="main_inner_box border border border-dark-subtle rounded">
+
+                                                            <div class="row">
+
+                                                                <div class="col">
+                                                                    <div class="main_inner_box p-2 bg-body-secondary border border-dark-subtle rounded-top">
                                                                     <h3>
-                                                                        Todo
+                                                                        Prossime classi
                                                                     </h3>
+                                                                    </div>
                                                                 </div>
+
                                                             </div>
+                                                            <!-- Fine Row -->
+
+                                                            <div class="row">
+
+                                                                <div class="col">
+                                                                    <div class="main_inner_box bg-light rounded-bottom p-1">
+                                                                        
+                                                                        <table class="table align-middle mb-0 bg-white ">
+                                                                            <thead class="bg-light">
+                                                                                <tr>
+                                                                                    <th>Nome</th>
+                                                                                    <th>Data inizio</th>
+                                                                                    <th>ROI</th>
+                                                                                    <th>Stato</th>
+                                                                                    <th>Azioni</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div class="d-flex align-items-center">
+                                                                                            <img
+                                                                                                src="./img/class-avatar.jpg"
+                                                                                                alt=""
+                                                                                                style="width: 45px; height: 45px"
+                                                                                                class="rounded-circle"
+                                                                                            />
+                                                                                            <div class="ms-3">
+                                                                                                <p class="fw-bold mb-1">Classe 75</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <p class="fw-normal mb-1">15 feb 2021</p>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <span>20%</span>
+                                                                                    </td>
+                                                                                    <td><span class="badge text-bg-success">Done</span></td>
+                                                                                    <td>
+                                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                            <i class="fa-solid fa-pencil"></i>
+                                                                                        </button>
+                                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                            <i class="fa-solid fa-trash-can"></i>
+                                                                                        </button>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div class="d-flex align-items-center">
+                                                                                            <img
+                                                                                                src="./img/class-avatar.jpg"
+                                                                                                alt=""
+                                                                                                style="width: 45px; height: 45px"
+                                                                                                class="rounded-circle"
+                                                                                            />
+                                                                                            <div class="ms-3">
+                                                                                                <p class="fw-bold mb-1">Classe 75</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <p class="fw-normal mb-1">15 feb 2021</p>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <span>20%</span>
+                                                                                    </td>
+                                                                                    <td><span class="badge text-bg-success">Done</span></td>
+                                                                                    <td>
+                                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                            <i class="fa-solid fa-pencil"></i>
+                                                                                        </button>
+                                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                            <i class="fa-solid fa-trash-can"></i>
+                                                                                        </button>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div class="d-flex align-items-center">
+                                                                                            <img
+                                                                                                src="./img/class-avatar.jpg"
+                                                                                                alt=""
+                                                                                                style="width: 45px; height: 45px"
+                                                                                                class="rounded-circle"
+                                                                                            />
+                                                                                            <div class="ms-3">
+                                                                                                <p class="fw-bold mb-1">Classe 75</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <p class="fw-normal mb-1">15 feb 2021</p>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <span>20%</span>
+                                                                                    </td>
+                                                                                    <td><span class="badge bg-warning">Process</span></td>
+                                                                                    <td>
+                                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                            <i class="fa-solid fa-pencil"></i>
+                                                                                        </button>
+                                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                            <i class="fa-solid fa-trash-can"></i>
+                                                                                        </button>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div class="d-flex align-items-center">
+                                                                                            <img
+                                                                                                src="./img/class-avatar.jpg"
+                                                                                                alt=""
+                                                                                                style="width: 45px; height: 45px"
+                                                                                                class="rounded-circle"
+                                                                                            />
+                                                                                            <div class="ms-3">
+                                                                                                <p class="fw-bold mb-1">Classe 75</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <p class="fw-normal mb-1">15 feb 2021</p>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <span>20%</span>
+                                                                                    </td>
+                                                                                    <td><span class="badge text-bg-success">Done</span></td>
+                                                                                    <td>
+                                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                            <i class="fa-solid fa-pencil"></i>
+                                                                                        </button>
+                                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                            <i class="fa-solid fa-trash-can"></i>
+                                                                                        </button>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div class="d-flex align-items-center">
+                                                                                            <img
+                                                                                                src="./img/class-avatar.jpg"
+                                                                                                alt=""
+                                                                                                style="width: 45px; height: 45px"
+                                                                                                class="rounded-circle"
+                                                                                            />
+                                                                                            <div class="ms-3">
+                                                                                                <p class="fw-bold mb-1">Classe 75</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <p class="fw-normal mb-1">15 feb 2021</p>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <span>20%</span>
+                                                                                    </td>
+                                                                                    <td><span class="badge text-bg-danger">failed</span></td>
+                                                                                    <td>
+                                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                            <i class="fa-solid fa-pencil"></i>
+                                                                                        </button>
+                                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                            <i class="fa-solid fa-trash-can"></i>
+                                                                                        </button>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div class="d-flex align-items-center">
+                                                                                            <img
+                                                                                                src="./img/class-avatar.jpg"
+                                                                                                alt=""
+                                                                                                style="width: 45px; height: 45px"
+                                                                                                class="rounded-circle"
+                                                                                            />
+                                                                                            <div class="ms-3">
+                                                                                                <p class="fw-bold mb-1">Classe 75</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <p class="fw-normal mb-1">15 feb 2021</p>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <span>20%</span>
+                                                                                    </td>
+                                                                                    <td><span class="badge text-bg-success">Done</span></td>
+                                                                                    <td>
+                                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                            <i class="fa-solid fa-pencil"></i>
+                                                                                        </button>
+                                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                            <i class="fa-solid fa-trash-can"></i>
+                                                                                        </button>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div class="d-flex align-items-center">
+                                                                                            <img
+                                                                                                src="./img/class-avatar.jpg"
+                                                                                                alt=""
+                                                                                                style="width: 45px; height: 45px"
+                                                                                                class="rounded-circle"
+                                                                                            />
+                                                                                            <div class="ms-3">
+                                                                                                <p class="fw-bold mb-1">Classe 75</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <p class="fw-normal mb-1">15 feb 2021</p>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <span>20%</span>
+                                                                                    </td>
+                                                                                    <td><span class="badge text-bg-danger">failed</span></td>
+                                                                                    <td>
+                                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                            <i class="fa-solid fa-pencil"></i>
+                                                                                        </button>
+                                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                            <i class="fa-solid fa-trash-can"></i>
+                                                                                        </button>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <div class="d-flex align-items-center">
+                                                                                            <img
+                                                                                                src="./img/class-avatar.jpg"
+                                                                                                alt=""
+                                                                                                style="width: 45px; height: 45px"
+                                                                                                class="rounded-circle"
+                                                                                            />
+                                                                                            <div class="ms-3">
+                                                                                                <p class="fw-bold mb-1">Classe 75</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <p class="fw-normal mb-1">15 feb 2021</p>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <span>20%</span>
+                                                                                    </td>
+                                                                                    <td><span class="badge text-bg-success">Done</span></td>
+                                                                                    <td>
+                                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                            <i class="fa-solid fa-pencil"></i>
+                                                                                        </button>
+                                                                                        <button type="button" class="btn btn-outline-secondary">
+                                                                                            <i class="fa-solid fa-trash-can"></i>
+                                                                                        </button>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                
+                                                                            </tbody>
+                                                                        </table>
+                                                                        
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <!-- Fine Row -->
 
                                                         </div>
-                                                        <!-- Fine Row -->
+                                                    </div>
 
-                                                        <div class="row">
+                                                </div>
+                                                <!-- Fine Row -->
 
-                                                            <div class="col">
-                                                                <div class="main_inner_box bg-light p-1 rounded-bottom">
-                                                                    
-                                                                    <div class="card ">
-                                                                        <div class="card-body p-1">
+                                                <div class="row">
 
-                                                                          <!-- Tabs content -->
-                                                                          <div class="tab-content" id="ex1-content">
-                                                                            <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel"
-                                                                              aria-labelledby="ex1-tab-1">
-                                                                              <ul class="list-group mb-0">
-                                                                                <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
-                                                                                  style="background-color: #f4f6f7;">
-                                                                                  <input class="form-check-input me-2 " type="checkbox" value="" aria-label="..." checked />
-                                                                                  <span class="text-black">Kickoff nuove classi</span>
-                                                                                </li>
-                                                                                <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
-                                                                                  style="background-color: #f4f6f7;">
-                                                                                  <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked />
-                                                                                  <span class="text-black">Lezione su Bootsrtap 5 in classe #75</span>
-                                                                                </li>
-                                                                                <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
-                                                                                  style="background-color: #f4f6f7;">
-                                                                                  <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
-                                                                                  <span class="text-black">Controllare username github studenti</span>
-                                                                                </li>
-                                                                              </ul>
+                                                    <div class="col m-2">
+                                                        <div class="main_inner_box border border-dark-subtle rounded">
+
+                                                            <div class="row">
+
+                                                                <div class="col">
+                                                                    <div class="main_inner_box p-2 bg-body-secondary border border-dark-subtle rounded-top">
+                                                                        <h3>
+                                                                            F.A.Q.
+                                                                        </h3>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <!-- Fine Row -->
+
+                                                            <div class="row">
+
+                                                                <div class="col">
+                                                                    <div class="main_inner_box bg-light p-1 rounded-bottom">
+                                                                        
+                                                                        <div class="accordion" id="accordionExample">
+                                                                            <div class="accordion-item">
+                                                                              <h2 class="accordion-header">
+                                                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                                                  Accordion Item #1
+                                                                                </button>
+                                                                              </h2>
+                                                                              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                                                                <div class="accordion-body">
+                                                                                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                                                </div>
+                                                                              </div>
                                                                             </div>
-                                                                            <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
-                                                                              <ul class="list-group mb-0">
-                                                                                <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
-                                                                                  style="background-color: #f4f6f7;">
-                                                                                  <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
-                                                                                  Morbi leo risus
-                                                                                </li>
-                                                                                <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
-                                                                                  style="background-color: #f4f6f7;">
-                                                                                  <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
-                                                                                  Porta ac consectetur ac
-                                                                                </li>
-                                                                                <li class="list-group-item d-flex align-items-center border-0 mb-0 rounded"
-                                                                                  style="background-color: #f4f6f7;">
-                                                                                  <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
-                                                                                  Vestibulum at eros
-                                                                                </li>
-                                                                              </ul>
+                                                                            <div class="accordion-item">
+                                                                              <h2 class="accordion-header">
+                                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                                                  Accordion Item #2
+                                                                                </button>
+                                                                              </h2>
+                                                                              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                                                <div class="accordion-body">
+                                                                                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                                                </div>
+                                                                              </div>
                                                                             </div>
-                                                                            <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
-                                                                              <ul class="list-group mb-0">
-                                                                                <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
-                                                                                  style="background-color: #f4f6f7;">
-                                                                                  <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked />
-                                                                                  <s>Cras justo odio</s>
-                                                                                </li>
-                                                                                <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
-                                                                                  style="background-color: #f4f6f7;">
-                                                                                  <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked />
-                                                                                  <s>Dapibus ac facilisis in</s>
-                                                                                </li>
-                                                                              </ul>
+                                                                            <div class="accordion-item">
+                                                                              <h2 class="accordion-header">
+                                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                                                  Accordion Item #3
+                                                                                </button>
+                                                                              </h2>
+                                                                              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                                                <div class="accordion-body">
+                                                                                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                                                </div>
+                                                                              </div>
                                                                             </div>
                                                                           </div>
-                                                                          <!-- Tabs content -->
-                                                              
-                                                                        </div>
-                                                                      </div>
-
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                        <!-- Fine Row -->
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <!-- Fine Row -->
-
-                                            <div class="row">
-
-                                                <div class="col m-2">
-                                                    <div class="main_inner_box">
-
-                                                        <div class="row ">
-
-                                                            <div class="col">
-                                                                <div class="main_inner_box bg-light border border-dark-subtle rounded p-1 ">
-                                                                    
-                                                                    <div class="card ">
-                                                                        <img src="img/stats.jpeg" class="card-img-top" alt="...">
-                                                                        <div class="card-body">
-                                                                          <h5 class="card-title">Utenti attivi</h5>
-                                                                          <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
-                                                                        </div>
-                                                                        <ul class="list-group list-group-flush ">
-                                                                          <li class="list-group-item text-dark border border-dark-subtle">Gennaio: 1200</li>
-                                                                          <li class="list-group-item text-dark border border-dark-subtle">Febbraio: 800</li>
-                                                                          <li class="list-group-item text-dark border border-dark-subtle">Marzo: 1500</li>
-                                                                        </ul>
-                                                                        <div class="card-body">
-                                                                          <a href="#" class="card-link">Visualizza report approfondito</a>
-                                                                        </div>
+                                                                        
                                                                     </div>
-                                                                    
                                                                 </div>
+
                                                             </div>
-
+                                                            <!-- Fine Row -->
+                                                            
                                                         </div>
-                                                        <!-- Fine Row -->
-
                                                     </div>
+
                                                 </div>
+                                                <!-- Fine Row -->
 
                                             </div>
-                                            <!-- Fine Row -->
-
-                                        </div>
-                                    </div>
-                                    <!-- fine MAIN-RIGHT -->
-
-                                </div>
-                                <!-- Fine Row -->
-
                             </div>
-                        </div>
+                            <!-- fine MAIN-LEFT -->
 
-                    </div>
-                    <!-- Fine row -->
+                            <!-- inizio MAIN-RIGHT -->
+                            <div class="col-12 col-lg-4">
+                                            <div class="main_box">
+
+                                                <div class="row">
+
+                                                    <div class="col m-2">
+                                                        <div class="main_inner_box border border-dark-subtle rounded">
+
+                                                            <div class="row">
+
+                                                                <div class="col">
+                                                                    <div class="main_inner_box p-2 bg-body-secondary border border-dark-subtle rounded-top">
+                                                                        <h3>
+                                                                            Todo
+                                                                        </h3>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <!-- Fine Row -->
+
+                                                            <div class="row">
+
+                                                                <div class="col">
+                                                                    <div class="main_inner_box bg-light p-1 rounded-bottom">
+                                                                        
+                                                                        <div class="card ">
+                                                                            <div class="card-body p-1">
+
+                                                                            <!-- Tabs content -->
+                                                                            <div class="tab-content" id="ex1-content">
+                                                                                <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel"
+                                                                                aria-labelledby="ex1-tab-1">
+                                                                                <ul class="list-group mb-0">
+                                                                                    <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                                                                                    style="background-color: #f4f6f7;">
+                                                                                    <input class="form-check-input me-2 " type="checkbox" value="" aria-label="..." checked />
+                                                                                    <span class="text-black">Kickoff nuove classi</span>
+                                                                                    </li>
+                                                                                    <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                                                                                    style="background-color: #f4f6f7;">
+                                                                                    <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked />
+                                                                                    <span class="text-black">Lezione su Bootsrtap 5 in classe #75</span>
+                                                                                    </li>
+                                                                                    <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                                                                                    style="background-color: #f4f6f7;">
+                                                                                    <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
+                                                                                    <span class="text-black">Controllare username github studenti</span>
+                                                                                    </li>
+                                                                                </ul>
+                                                                                </div>
+                                                                                <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                                                                                <ul class="list-group mb-0">
+                                                                                    <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                                                                                    style="background-color: #f4f6f7;">
+                                                                                    <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
+                                                                                    Morbi leo risus
+                                                                                    </li>
+                                                                                    <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                                                                                    style="background-color: #f4f6f7;">
+                                                                                    <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
+                                                                                    Porta ac consectetur ac
+                                                                                    </li>
+                                                                                    <li class="list-group-item d-flex align-items-center border-0 mb-0 rounded"
+                                                                                    style="background-color: #f4f6f7;">
+                                                                                    <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
+                                                                                    Vestibulum at eros
+                                                                                    </li>
+                                                                                </ul>
+                                                                                </div>
+                                                                                <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+                                                                                <ul class="list-group mb-0">
+                                                                                    <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                                                                                    style="background-color: #f4f6f7;">
+                                                                                    <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked />
+                                                                                    <s>Cras justo odio</s>
+                                                                                    </li>
+                                                                                    <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                                                                                    style="background-color: #f4f6f7;">
+                                                                                    <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked />
+                                                                                    <s>Dapibus ac facilisis in</s>
+                                                                                    </li>
+                                                                                </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- Tabs content -->
+                                                                
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <!-- Fine Row -->
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!-- Fine Row -->
+
+                                                <div class="row">
+
+                                                    <div class="col m-2">
+                                                        <div class="main_inner_box">
+
+                                                            <div class="row ">
+
+                                                                <div class="col">
+                                                                    <div class="main_inner_box bg-light border border-dark-subtle rounded p-1 ">
+                                                                        
+                                                                        <div class="card ">
+                                                                            <img src="img/stats.jpeg" class="card-img-top" alt="...">
+                                                                            <div class="card-body">
+                                                                            <h5 class="card-title">Utenti attivi</h5>
+                                                                            <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                                                            </div>
+                                                                            <ul class="list-group list-group-flush ">
+                                                                            <li class="list-group-item text-dark border border-dark-subtle">Gennaio: 1200</li>
+                                                                            <li class="list-group-item text-dark border border-dark-subtle">Febbraio: 800</li>
+                                                                            <li class="list-group-item text-dark border border-dark-subtle">Marzo: 1500</li>
+                                                                            </ul>
+                                                                            <div class="card-body">
+                                                                            <a href="#" class="card-link">Visualizza report approfondito</a>
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <!-- Fine Row -->
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!-- Fine Row -->
+
+                                            </div>
+                            </div>
+                            <!-- fine MAIN-RIGHT -->
+
+                        </div>
+                        <!-- Fine Row -->
+
+                    </main>
 
                 </main>
+                <!-- Fine main -->
 
-            </main>
-            <!-- Fine main -->
-
+            </div>
         </section>
         <!-- Fine wrapper -->
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>
